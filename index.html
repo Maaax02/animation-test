@@ -7,22 +7,21 @@
 </head>
 <body>
     <div id="animation-container">
-        <img src="example.gif" id="animation" alt="Animated GIF">
+        <img src="your_animation.gif" id="animation" alt="Animated GIF">
     </div>
 
     <script>
         // Get a reference to the GIF element
         var animation = document.getElementById("animation");
 
-        // Function to redirect to another link after the GIF has played once
+        // Function to redirect to another link after a delay
         function redirectToLink() {
             // Replace "https://example.com" with your desired link
-            window.location.href = "https://www.youtube.com";
+            window.location.href = "https://example.com";
         }
 
-        // Event listener to detect when the GIF has finished playing
-        animation.addEventListener("animationend", redirectToLink);
-        animation.addEventListener("webkitAnimationEnd", redirectToLink); // For compatibility with Safari
+        // Delay the redirection after 5 seconds (adjust as needed)
+        setTimeout(redirectToLink, 5000); // 5000 milliseconds = 5 seconds
     </script>
 </body>
 </html>
