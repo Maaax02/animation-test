@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Redirect</title>
+</head>
+<body>
+    <div id="animation-container">
+        <img src="example.gif" id="animation" alt="Animated GIF">
+    </div>
+
+    <script>
+        // Get a reference to the GIF element
+        var animation = document.getElementById("animation");
+
+        // Function to redirect to another link after the GIF has played once
+        function redirectToLink() {
+            // Replace "https://example.com" with your desired link
+            window.location.href = "https://www.youtube.com";
+        }
+
+        // Event listener to detect when the GIF has finished playing
+        animation.addEventListener("animationend", redirectToLink);
+        animation.addEventListener("webkitAnimationEnd", redirectToLink); // For compatibility with Safari
+    </script>
+</body>
+</html>
