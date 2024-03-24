@@ -7,11 +7,21 @@
 </head>
 <body>
     <div id="animation-container">
-        <img src="your_animation.gif" id="animation" alt="Animated GIF">
+        <img src="example.gif" id="animation" alt="Animated GIF">
     </div>
 
     <script>
-        console.log('HERE')
+        // Get a reference to the GIF element
+        var animation = document.getElementById("animation");
+
+        // Function to redirect to another link after a delay
+        function redirectToLink() {
+            // Replace "https://example.com" with your desired link
+            window.location.href = "https://www.instagram.com/_simoneph_?igsh=OTRiaG5ndjJpbGxp";
+        }
+
+        // Delay the redirection after 5 seconds (adjust as needed)
+        setTimeout(redirectToLink, 5000); // 5000 milliseconds = 5 seconds
     </script>
 </body>
 </html>
